@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro';
+}
+header {
+    background-color: #071629;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+nav, .hero, .quote, .tutorials, .free-join, .faq-section, .foot-section {
+    width: 1104px;
+    margin: auto;
+} 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+nav>img {
+    width: 20%;
+    height: 5%;
+}
+nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+nav>ul>li>a {
+    padding: 25px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    color: white;
+}
+
+.hero .banner h1{
+    font-size: 7.5vw;
+}
+.banner {
+    text-align: center;
+    color: white;
+}
+.banner h1 {
+    margin-bottom: 0;
+}
+.banner div {
+    margin-top: 0;
+    position: relative;
+    top: -15px;
+}
+.banner div span {
+    margin: 22px;
+    font-weight: bold;
+}
+.banner button {
+    margin: 20px;
+    background-color: #C271FF;
+    padding: 10px 15px;
+    font-size: 12px;
+    border-radius: 20px;
+    color: white;
+    border: 1px solid #C271FF;
+}
+.experts h2 {
+    margin: 100px;
+    text-align: center;
+    font-weight: lighter;
+    color: white;
+}
+.experts #txt {
+    color: #C271FF;
+    font-weight: bold;
+}
+.experts .members {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.experts .members #bruce img {
+    border-radius: 100px;
+}
+/*.experts .members div h3, p {
+    text-align: center;
+    margin: 2px;
+}*/
+.experts .members div p {
+    font-style: italic;
+}
+article {
+    background-color: #C271FF;
+}
+main .quote {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    color: white;
+}
+main .quote-cite blockquote, p{
+    margin: 0;
+}
+main .quote-cite blockquote, h3 {
+    margin-bottom: 0;
+}
+main .tutorials {
+    margin-bottom: 80px;
+}
+main .tutorials h2 {
+    Margin: 70px;
+    text-align: center;
+}
+main .tutorials .videos {
+    display: flex;
+}
+main .tutorials .videos .profile {
+    display: flex;
+    align-items: center;
+}
+
+main .tutorials .videos .profile img {
+    width: 30px;
+    height: 30px;
+}
+
+main .tutorials .videos .profile h4 {
+    margin-left: 20px;
+    color: #C271FF;
+}
+main .tutorials .videos .rating {
+    display: flex;
+    justify-content: space-between;
+}
+main .tutorials .videos .rating p {
+    margin-right: 30px;
+    color:#C271FF
+}
+main .memb {
+    background-color:#071629;
+    color: white;
+}
+main .free-join .title {
+    padding: 30px;
+}
+main .free-join h2 {
+    text-align: center;
+}
+main .free-join .members-section {
+    display: flex;
+    justify-content: space-between;
+}
+main .free-join button {
+    margin-top: 70px;
+    margin-bottom: 40px;
+    background-color: #C271FF;
+    padding: 10px 15px;
+    font-size: 12px;
+    border-radius: 20px;
+    color: white;
+    border: 1px solid #C271FF;
+}
+main .free-join .register-btn {
+    text-align: center;
+}
+main .faq-section .faq-title h2{
+    font-size: 4vw;
+    text-align: center;
+}
+main .faq-section .faq-how {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main .faq-section .faq-how div {
+    width: 50%;
+    text-align: center;
+    
+}
+footer {
+    background-color: #071629;
+}
