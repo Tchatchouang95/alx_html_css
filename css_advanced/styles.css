@@ -2,8 +2,11 @@
     box-sizing: border-box;
     font-family: 'Source Sans Pro';
 }
+.word-color {
+    color: #C271FF;
+}
 header {
-    background-color: #071629;
+    background-image: url(Images/Object.png);
     padding-bottom: 40px;
     padding-top: 10px;
 }
@@ -64,29 +67,33 @@ nav>ul>li>a {
     color: white;
     border: 1px solid #C271FF;
 }
-.experts h2 {
+section .experts h2 {
     margin: 100px;
     text-align: center;
     font-weight: lighter;
     color: white;
 }
-.experts #txt {
+section .experts #txt {
     color: #C271FF;
     font-weight: bold;
 }
-.experts .members {
+section .experts .members {
     display: flex;
     justify-content: space-between;
     color: white;
 }
-.experts .members #bruce img {
+section .experts .members #bruce img {
     border-radius: 100px;
 }
-/*.experts .members div h3, p {
+section .experts .members div h3 {
     text-align: center;
     margin: 2px;
-}*/
-.experts .members div p {
+}
+section .experts .members div p {
+    text-align: center;
+    margin: 2px;
+}
+section .experts .members div p {
     font-style: italic;
 }
 article {
@@ -101,6 +108,7 @@ main .quote {
 }
 main .quote-cite blockquote, p{
     margin: 0;
+    text-align: left;
 }
 main .quote-cite blockquote, h3 {
     margin-bottom: 0;
@@ -132,10 +140,15 @@ main .tutorials .videos .profile h4 {
 main .tutorials .videos .rating {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 main .tutorials .videos .rating p {
     margin-right: 30px;
     color:#C271FF
+}
+main .tutorials .videos .rating img {
+    height: 18px;
+    width: 100px;
 }
 main .memb {
     background-color:#071629;
@@ -150,6 +163,16 @@ main .free-join h2 {
 main .free-join .members-section {
     display: flex;
     justify-content: space-between;
+}
+main .free-join .members-section div h3 {
+    text-align: center;
+}
+main .free-join .members-section div p{
+    text-align: center;
+}
+main .free-join .members-section div img {
+    position: relative;
+    left: 70px;
 }
 main .free-join button {
     margin-top: 70px;
@@ -175,9 +198,32 @@ main .faq-section .faq-how {
 }
 main .faq-section .faq-how div {
     width: 50%;
-    text-align: center;
+    margin: auto;
+    padding-bottom: 30px;
+    text-align: justify;
     
+}
+main .faq-section .faq-how .txt-color {
+    color: rgb(174, 167, 167);;
 }
 footer {
     background-color: #071629;
+    padding: 80px;
+}
+footer .foot-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .foot-section div i{
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+}
+footer .foot-section p {
+    text-align: center;
+    color: rgb(174, 167, 167);
+    font-size: small;
+    position: relative;
+    bottom: -50px;
 }
