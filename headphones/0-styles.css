@@ -1,0 +1,111 @@
+* {
+    font-family: 'Source Sans Pro';
+}
+header {
+    background-image: url(images/headphones_hero_1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.head {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/*Mobile Menu*/
+.nav #mobileMenu-active {
+    display: none;
+}
+.nav .openMenu-btn, .closeMenu-btn {
+    display: none;
+}
+.nav .logo-container {
+    display: flex;
+    justify-content: space-between;
+}
+.nav .links-container {
+    flex-direction: row;
+    align-items: center;
+}
+@media(max-width: 430px) {
+    .links-container{
+        display: none;
+    }
+    .nav, .links-container ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav .openMenu-btn, .closeMenu-btn {
+        display: block;
+    }
+    .logo-container {
+        display: flex;
+        align-items: flex-start;
+    }
+    #mobileMenu-active:checked ~ .links-container {
+        display: flex;
+    }
+    .openMenu-btn {
+        position: relative;
+        left: -45%;
+    }
+}
+/*Mobile Menu end*/
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.nav img {
+    width: 150px;
+    height: 35px;
+    margin-left: 7px;
+}
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.nav ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+}
+.nav ul li a:hover {
+    color: #FF6565;
+}
+.head .hero {
+    text-align: center;
+    color: white;
+}
+.head .hero h1 {
+    font-size: 2em;
+    margin-top: 290px;
+    margin-bottom: 0;
+}
+.head .hero #txt-1 {
+    margin-top: 0;
+}
+.head .hero button {
+    margin-bottom: 65px;
+    margin-top: 25px;
+    background-color: #FF6565;
+    border: 1px solid #FF6565;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+.head .hero button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+.head .hero #txt-2 {
+    max-width: 650px;
+    margin: auto;
+    height: 160px;
+}
